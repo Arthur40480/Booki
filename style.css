@@ -1,9 +1,107 @@
-body
+body 
 {
+box-sizing: border-box;
 font-family: 'Raleway', sans-serif;
-}    
+font-size: 14px;
+margin: 0%;
+padding: 0%;
+}  
+
+.page
+{
+    max-width: 1440px;
+    margin: auto;
+}
+
+/*------- HEADER -------*/
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2px;
+    flex-wrap: wrap;
+    font-size: 15px;
+}
+
+.img_header               /*----- Img du header -----*/
+{
+    margin: 50px 0 0 30px;
+    width: 110px;
+    height: 50px;
+}
+
+.headernav
+{
+    margin-top: 50px;
+}
+
+header a                  /*----- Liens du header -----*/
+{
+    text-decoration: none;
+    color: black;
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+header a:hover             /*----- Au survol des liens -----*/
+{
+    border-top: 2px solid #0065FC;
+    color:#0065FC;
+    
+}
 
 
+/*----- Header version tablette -----*/
+@media screen and (min-width: 768px) and (max-width: 991px)
+{
+    body 
+    {
+        font-size: 20px;
+    }
 
+    .img_header
+    {
+        width: 180px;
+        height: 90px;
+    }
+}
 
+/*----- Header version portable ( entre 356px et 767px ) -----*/
+@media screen and (min-width: 356px) and (max-width: 767px)
+{
+    .headernav
+    {
+        width: 100%;
+        display: flex;    
+    }
+
+    .headernav a 
+    {
+        border-bottom: 3px solid #F2F2F2 ;
+        padding-bottom: 15px;
+        width: 100%;
+    }
+    
+    .img_header
+    {
+        margin: auto;
+    }
+        
+    header a:hover
+    {
+       border-top: none;
+       border-color: #0065FC;
+    }
+
+    .headernav a 
+    {
+        text-align: center;
+        margin: auto;
+        padding-top: 0%;
+        font-size: 16px;
+        
+    }
+}
 
