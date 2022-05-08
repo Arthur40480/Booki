@@ -7,7 +7,6 @@ body{
     font-size: 14px;
     box-sizing: content-box;
     font-family: "Raleway";
-
 }
 
 /*---- NAV ----*/
@@ -19,7 +18,6 @@ nav{
     width: 100px;
     margin-left: 20px;
 }
-
 .list_nav{
     display: flex;
 }
@@ -32,20 +30,16 @@ nav{
     color: #0065FC;
     border-top: #0065FC solid 2px;
 }
-
 nav ul{
     list-style: none;
 }
 
 /*---- NAV PORTABLE 786PX ----*/
 @media screen and (max-width: 786px){
-    
     nav{
         flex-direction: column;
         align-items: center;
         width: 100%;
-
-
     }
     .list_nav{
         width: 100%;
@@ -70,6 +64,7 @@ nav ul{
     }
     
 }
+
 /*---- HEADER ----*/
 header{
     margin: auto;
@@ -105,7 +100,6 @@ form{
     border: 1px solid #F2F2F2;
     padding-left: 20px;   
 }
-
 .search_bar::placeholder{
     color: rgb(0, 0, 0);
     opacity: 1;                 /*-- Pour que l'écriture soit vraiment noir --*/
@@ -125,7 +119,6 @@ form{
     font-weight: bold;
     
 }
-
 @media screen and (max-width: 786px){
     .desktop_button
     {
@@ -139,7 +132,6 @@ form{
         display: none;
     }
 }
-
 @media screen and (max-width: 786px){
     .mobile_button{
         border: none;
@@ -160,13 +152,56 @@ form{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    width: 100%;
 }
 .filtres ul{
     list-style: none;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+}   
+.filtres li{
+    display: flex;
+    align-items: center;
+    border: 2px solid #F2F2F2;
+    border-radius: 30px;
+    border-left: none;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+.filtres li:hover{
+    cursor: pointer;
+    background-color: #DEEBFF;
+    color: #0065FC;
+    transition-duration: 500ms;
+    border-color: #DEEBFF;
+}
+.filtres i{
+    background-color: #DEEBFF;
+    color: #0065FC;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
+}
+.filtres_text{
+    padding: 0 20px 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/*---- ICONE INFO ----*/
+.fa-info{
+    color: #0065FC;
+    font-weight: 900;
+    border: #F2F2F2 2px solid;
+    border-radius: 50%;
+    padding: 8px 10px;
+    margin-left: 20px;
+    margin-right: 10px;
 }
 
 
