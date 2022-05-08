@@ -1,107 +1,173 @@
-body 
-{
-box-sizing: border-box;
-font-family: 'Raleway', sans-serif;
-font-size: 14px;
-margin: 0%;
-padding: 0%;
-}  
-
-.page
-{
+/*---- DESKTOP ----*/
+body{
     max-width: 1440px;
     margin: auto;
+    margin-top: 20px;
+    width: 98%;
+    font-size: 14px;
+    box-sizing: content-box;
+    font-family: "Raleway";
+
 }
 
-/*------- HEADER -------*/
-
-header
-{
+/*---- NAV ----*/
+nav{
     display: flex;
     justify-content: space-between;
-    margin-top: 2px;
-    flex-wrap: wrap;
-    font-size: 15px;
+}
+.logo_nav{
+    width: 100px;
+    margin-left: 20px;
 }
 
-.img_header               /*----- Img du header -----*/
-{
-    margin: 50px 0 0 30px;
-    width: 110px;
-    height: 50px;
+.list_nav{
+    display: flex;
 }
-
-.headernav
-{
-    margin-top: 50px;
-}
-
-header a                  /*----- Liens du header -----*/
-{
+.list_nav a{
+    padding: 30px 20px;
     text-decoration: none;
     color: black;
-    padding-top: 50px;
-    padding-left: 40px;
-    padding-right: 40px;
+}
+.list_nav a:hover{
+    color: #0065FC;
+    border-top: #0065FC solid 2px;
 }
 
-header a:hover             /*----- Au survol des liens -----*/
-{
-    border-top: 2px solid #0065FC;
-    color:#0065FC;
+nav ul{
+    list-style: none;
+}
+
+/*---- NAV PORTABLE 786PX ----*/
+@media screen and (max-width: 786px){
     
-}
-
-
-/*----- Header version tablette -----*/
-@media screen and (min-width: 768px) and (max-width: 991px)
-{
-    body 
-    {
-        font-size: 20px;
-    }
-
-    .img_header
-    {
-        width: 180px;
-        height: 90px;
-    }
-}
-
-/*----- Header version portable ( entre 356px et 767px ) -----*/
-@media screen and (min-width: 356px) and (max-width: 767px)
-{
-    .headernav
-    {
+    nav{
+        flex-direction: column;
+        align-items: center;
         width: 100%;
-        display: flex;    
-    }
 
-    .headernav a 
-    {
-        border-bottom: 3px solid #F2F2F2 ;
+
+    }
+    .list_nav{
+        width: 100%;
+        justify-content: space-around;
+        padding: 0%;
+    }
+    .list_nav a{
+        padding-top: 10px;
         padding-bottom: 15px;
+        border-bottom: 2px solid #F2F2F2;
         width: 100%;
+        
+    }
+    .list_nav li{
+        display: flex;
+        width: 100%;
+        text-align: center;
+    }
+    .list_nav a:hover{
+        border-top: none;
+        border-bottom-color: #0065FC;
     }
     
-    .img_header
-    {
-        margin: auto;
-    }
-        
-    header a:hover
-    {
-       border-top: none;
-       border-color: #0065FC;
-    }
+}
+/*---- HEADER ----*/
+header{
+    margin: auto;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+header h1{
+    padding-right: 30px;
+    font-size: 20px;
+}
+header p{
+    padding-top: 0%
+}
 
-    .headernav a 
+/*---- FORMULAIRE ----*/
+form{
+    display: flex;
+    margin-left: 20px;
+}
+
+/*---- ÎCONE LOCALISATION ----*/
+.fa-location-dot{
+    background-color: #F2F2F2;
+    padding: 15px 17px;
+    border-radius: 15px 0 0 15px;
+    font-size: 16px;    
+}
+
+/*---- INPUT TYPE SEARCH ----*/
+.search_bar{
+    width: 220px;
+    border: none;               /*-- Pour enlever la bordure de base --*/
+    border: 1px solid #F2F2F2;
+    padding-left: 20px;   
+}
+
+.search_bar::placeholder{
+    color: rgb(0, 0, 0);
+    opacity: 1;                 /*-- Pour que l'écriture soit vraiment noir --*/
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/*---- BUTTON DESKTOP ----*/
+.desktop_button{
+    border: none;
+    background-color: #0065FC;
+    border-color: #0065FC;
+    border-radius: 0 15px 15px 0;
+    width: 120px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+
+@media screen and (max-width: 786px){
+    .desktop_button
     {
-        text-align: center;
-        margin: auto;
-        padding-top: 0%;
-        font-size: 16px;
-        
+        display: none;
     }
 }
+
+/*---- BUTTON MOBILE ----*/
+@media screen and (min-width: 787px){
+    .mobile_button{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 786px){
+    .mobile_button{
+        border: none;
+        border-radius: 15px;
+        background-color: #0065FC;
+        padding: 15px;
+        color: white;
+        font-size: 16px;
+        position: relative;
+        right: 20px;
+    }
+}
+
+/*---- FILTRES ----*/
+.filtres{
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.filtres ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+
 

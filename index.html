@@ -14,7 +14,9 @@
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="images/logo/fav1.png" />
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;800;900&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -23,16 +25,16 @@
 
                 <!-- Logo du site -->
                 <a href="index.html">
-                    <img src="images/logo/Booki.png" alt="Logo du site Booki">
+                    <img src="images/logo/Booki@3x.png" class="logo_nav" alt="Logo du site Booki">
                 </a>
                 
-                <ul>
+                <ul class="list_nav">
                     <li>
-                        <a href="#">Hébergements</a>
+                        <a href="#" >Hébergements</a>
                     </li>
 
                     <li>
-                        <a href="#">Activités</a>
+                        <a href="#" >Activités</a>
                     </li>
                 </ul>
             </nav>
@@ -50,30 +52,37 @@
                 <i class="fa-solid fa-location-dot"></i>
             
                 <!-- Zone de texte -->
-                <input type="search" name="lieu" placeholder="Marseille, France">
+                <input class="search_bar" type="search" name="lieu" placeholder="Marseille, France">
 
                 <!-- Boutton rechercher -->
-                <input type="submit" value="Rechercher">
+                <button class="desktop_button">Rechercher</button>
+                <button class="mobile_button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
             </form>
 
-            <section>
+            <section class="filtres">
                 <!-- Filtres -->
                 <h2>Filtres</h2>
                 <ul>
                     <li>
-                        <i class="fa-solid fa-money-bill-wave"></i>Economique
+                        <i class="fa-solid fa-money-bill-wave"></i>
+                        <span class="filtres_text">Economique</span>
                     </li>
 
                     <li>
-                        <i class="fa-solid fa-child-reaching"></i>Familial
+                        <i class="fa-solid fa-child-reaching"></i>
+                        <span class="filtres_text">Familial</span>
                     </li>
 
                     <li>
-                        <i class="fa-solid fa-heart"></i>Romantique
+                        <i class="fa-solid fa-heart"></i>
+                        <span class="filtres_text">Romantique</span>
                     </li>
 
                     <li>
-                        <i class="fa-solid fa-dog"></i>Animaux autorisés
+                        <i class="fa-solid fa-dog"></i>
+                        <span class="filtres_text">Animaux autorisés</span>
                     </li>
 
                 </ul>
