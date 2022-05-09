@@ -41,6 +41,7 @@
 
             <!--    Header    -->
             <header>
+
                 <!-- Titre et sous-titre de page -->
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
@@ -48,6 +49,7 @@
 
             <!-- Barre de recherche -->
             <form>
+
                 <!-- Icone de la barre de recherche-->
                 <i class="fa-solid fa-location-dot"></i>
             
@@ -55,8 +57,8 @@
                 <input class="search_bar" type="search" name="lieu" placeholder="Marseille, France">
 
                 <!-- Boutton rechercher -->
-                <button class="desktop_button">Rechercher</button>
-                <button class="mobile_button">
+                <button class="desktop_button">Rechercher</button>    <!-- DESKTOP -->
+                <button class="mobile_button">                        <!-- MOBILE -->
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
             </form>
@@ -95,26 +97,28 @@
             <main>
             
                 <!-- Section 1 "Les plus populaires"-->
-                <section>
+                <section class="populaires">
 
                 <!-- Titre de la section -->
-                <h2>Les plus populaires</h2>
-                <i class="fa-solid fa-star"></i>
+                <h2>Les plus populaires 
+                    <i class="fa-solid fa-star"></i>
+                </h2>
+                
 
                     <!-- Fiche Hôtel Le soleil du matin -->
                     <a href="#">
-                        <figure>
+                        <figure class="card_populaires">
                         
                             <!-- Miniature de l'hôtel -->
-                            <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Photo de l'hôtel Le soleil du matin">
+                            <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" class="img_populaires" alt="Photo de l'hôtel Le soleil du matin">
                         
                             <!-- Texte de la fiche -->
-                            <figcaption>
+                            <figcaption class="text_populaires">
                                 <h3>Hôtel Le soleil du matin</h3>
                                 <p>Nuit à partir de 128€</p>
 
                                 <!-- Notation -->
-                                <figure>
+                                <figure class="notation_populaires">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -127,23 +131,26 @@
 
                     <!-- Fiche Au coeur de l'eau Chambres d'hôtes -->
                     <a href="#">
-                        <figure>
+                        <figure class="card_populaires">
                         
                             <!-- Miniature des chambres d'hôtes -->
-                            <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Photo des chambres d'hôtes Au coeur de l'eau">
+                            <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" class="img_populaires" alt="Photo des chambres d'hôtes Au coeur de l'eau">
 
                             <!-- Texte de la fiche -->
-                            <figcaption>
+                            <figcaption class="text_populaires">
                                 <h3>Au coeur de l'eau Chambres d'hôtes</h3>
                                 <p>Nuit à partir de 71€</p>
 
                                 <!-- Notation -->
-                                <figure>
+                                <figure class="notation_populaires">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
+
+                                    <span class="etoile_grise">
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
                                 </figure>
                             </figcaption>
                         </figure>
@@ -151,23 +158,26 @@
 
                     <!-- Fiche Hôtel Tout bleu et blanc -->
                     <a href="#">
-                        <figure>
+                        <figure class="card_populaires">
                         
                             <!-- Miniature de l'hôtel-->
-                            <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Photo de l'hôtel Tout bleu et blanc">
+                            <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" class="img_populaires" alt="Photo de l'hôtel Tout bleu et blanc">
                         
                             <!-- Texte de la fiche -->
-                            <figcaption>
+                            <figcaption class="text_populaires">
                                 <h3>Hôtel Tout bleu et blanc</h3>
                                 <p>Nuit à partir de 68€</p>
 
                                 <!-- Notation -->
-                                <figure>
+                                <figure class="notation_populaires">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
+
+                                    <span class="etoile_grise">
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
                                 </figure>
                             </figcaption>
                         </figure>
