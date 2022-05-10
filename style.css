@@ -1,4 +1,4 @@
-/*---- DESKTOP ----*/
+/*---- Body ----*/
 body{
     max-width: 1440px;
     margin: auto;
@@ -9,7 +9,7 @@ body{
     font-family: "Raleway";
 }
 
-/*---- NAV ----*/
+/*---- Nav ----*/
 nav{
     display: flex;
     justify-content: space-between;
@@ -34,38 +34,8 @@ nav ul{
     list-style: none;
 }
 
-/*---- NAV PORTABLE 767PX ----*/
-@media screen and (max-width: 767px){
-    nav{
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-    .list_nav{
-        width: 100%;
-        justify-content: space-around;
-        padding: 0%;
-    }
-    .list_nav a{
-        padding-top: 10px;
-        padding-bottom: 15px;
-        border-bottom: 2px solid #F2F2F2;
-        width: 100%;
-        
-    }
-    .list_nav li{
-        display: flex;
-        width: 100%;
-        text-align: center;
-    }
-    .list_nav a:hover{
-        border-top: none;
-        border-bottom-color: #0065FC;
-    }
-    
-}
 
-/*---- HEADER ----*/
+/*---- Header ----*/
 header{
     margin: auto;
     margin-left: 20px;
@@ -79,13 +49,15 @@ header p{
     padding-top: 0%
 }
 
-/*---- FORMULAIRE ----*/
+
+/*---- Formulaire ----*/
 form{
     display: flex;
     margin-left: 20px;
 }
 
-/*---- ÎCONE LOCALISATION ----*/
+
+/*---- Îcon localisation ----*/
 .fa-location-dot{
     background-color: #F2F2F2;
     padding: 15px 17px;
@@ -93,7 +65,8 @@ form{
     font-size: 16px;    
 }
 
-/*---- INPUT TYPE SEARCH ----*/
+
+/*---- Input type search ----*/
 .search_bar{
     width: 220px;
     border: none;               /*-- Pour enlever la bordure de base --*/
@@ -107,7 +80,8 @@ form{
     font-size: 16px;
 }
 
-/*---- BUTTON DESKTOP ----*/
+
+/*---- Button desktop ----*/
 .desktop_button{
     border: none;
     background-color: #0065FC;
@@ -117,6 +91,7 @@ form{
     color: white;
     font-size: 16px;
     font-weight: bold;
+    cursor: pointer;
     
 }
 @media screen and (max-width: 767px){
@@ -126,7 +101,8 @@ form{
     }
 }
 
-/*---- BUTTON MOBILE ----*/
+
+/*---- Button mobile ----*/
 @media screen and (min-width: 768px){
     .mobile_button{
         display: none;
@@ -142,10 +118,12 @@ form{
         font-size: 16px;
         position: relative;
         right: 20px;
+        cursor: pointer;
     }
 }
 
-/*---- FILTRES ----*/
+
+/*---- filtres ----*/
 .filtres{
     margin-top: 20px;
     margin-left: 20px;
@@ -193,7 +171,8 @@ form{
     font-weight: bold;
 }
 
-/*---- ICONE INFO ----*/
+
+/*---- Îcon infos ----*/
 .fa-info{
     color: #0065FC;
     font-weight: 900;
@@ -205,7 +184,7 @@ form{
     margin-bottom: 20px;
 }
 
-/*---- LES PLUS POPULAIRES ----*/
+/*---- Section "Les plus populaires" ----*/
 .populaires{
     background-color: #F2F2F2;
     border: 1px solid #F2F2F2;
@@ -234,14 +213,14 @@ form{
 }
 .card_populaires:hover{
     transform: scale(1.05);
+    transition: 0.3s;
     box-shadow: 10px 10px 10px gray;
 }
 .img_populaires{
     border: white 1px solid;
     border-radius: 30px 0px 0px 30px;
     padding: 2px; 
-    width: 150px;
-    height: 150;   
+    width: 150px;   
     object-fit: cover;
 }
 .text_populaires h3{
@@ -264,7 +243,8 @@ form{
     margin: 30px;
 }
 
-/*---- HEBERGEMENTS A MARSEILLE ----*/
+
+/*---- Article "Hébergements à Marseille" ----*/
 .hebergements{
     background-color: #F2F2F2;
     border: 1px solid #F2F2F2;
@@ -281,7 +261,6 @@ form{
 .hebergements h2{
     width: 100%;
     display: flex;
-    padding: none;
     margin: 30px 0px 0px 30px;
     
 }
@@ -320,6 +299,7 @@ form{
 }
 .card_hebergements:hover{
     transform: scale(1.05);
+    transition: 0.3s;
     box-shadow: 10px 10px 10px gray;
 }
 .afficher{
@@ -329,22 +309,179 @@ form{
     font-weight: bold;
 }
 
-/*---- MAIN ----*/
+
+/*---- Main ----*/
 main{
     display: flex;
     flex-direction: row-reverse;
 }
 
-/*---- ACTIVITES A MARSEILLE ----*/
+
+/*---- Article "Activités à Marseille" ----*/
+.activité h2{
+    margin-left: 20px;
+    padding-bottom: 20px;
+}
 
 
-/*---- FOOTER ----*/
+/*---- Section "activités" pour le placement des cards ----*/
+.activités{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    height: 600px;  
+    color: black; 
+    font-weight: bold;  
+
+}
+.activités figure{
+    margin: auto;
+}
+
+
+.card_port{                     /*-- Card "Vieux port" --*/
+    height: 100%;
+    width: 22%;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow:0px 1px 5px 5px #F2F2F2;
+}
+.card_port:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.img_port
+{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+
+
+figure.card_pomègues{             /*-- Card "Fort de Pomègues" --*/
+    margin-top: 0%;
+}
+.card_pomègues{
+    height: 50%;
+    width: 22%;
+    border-radius: 30px;
+    box-shadow:0px 1px 5px 5px #F2F2F2;
+    overflow: hidden;
+}
+.card_pomègues:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.img_pomègues{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+
+figure.card_frioul{             /*-- Card "Îles de Frioul" --*/
+    margin-bottom: 0%;
+}
+.card_frioul{
+    height: 40%;
+    width: 22%;
+    border-radius: 30px;
+    box-shadow:0px 1px 5px 5px #F2F2F2;
+    overflow: hidden;
+}
+.card_frioul:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.img_frioul{
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+}
+
+
+.card_calanques{                /*-- Card " Parc national des Calanques" --*/
+    height: 100%;
+    width: 22%;
+    border-radius: 30px;
+    box-shadow:0px 1px 5px 5px #F2F2F2;
+    overflow: hidden;
+}
+.card_calanques:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.img_calanques{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+
+
+figure.card_dame{               /*-- Card "Notre dame de la garde" --*/
+    margin-right: 0%;
+    margin-top: 0%;
+}
+.card_dame{
+    height: 40%;
+    width: 22%;
+    box-shadow:0px 1px 5px 5px #F2F2F2;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.card_dame:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.img_dame{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+
+figure.card_longchamp{          /*-- Card "Parc Longchamp" --*/
+    margin-right: 0%;
+    margin-bottom: 0%;
+}
+.card_longchamp{
+    height: 50%;
+    width: 22%;
+    box-shadow:0px 1px 5px 5px #F2F2F2;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.card_longchamp:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.img_longchamp{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+
+/*-- Légendes des activités à Marseilles --*/
+.activités figcaption{
+    padding: 15px 0px 10px 20px;
+}
+
+
+/*---- Footer ----*/
 footer{
     display: flex;
     justify-content: space-between;
     background-color: #F2F2F2;
     width: 100%;
     padding-top: 60px;
+    margin-top: 40px;
 }
 footer ul{
     list-style-type: none;
