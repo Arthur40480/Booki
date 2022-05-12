@@ -46,7 +46,7 @@ header h1{
     font-size: 20px;
 }
 header p{
-    padding-top: 0%
+    padding-top: 0;
 }
 
 
@@ -74,7 +74,7 @@ form{
     padding-left: 20px;   
 }
 .search_bar::placeholder{
-    color: rgb(0, 0, 0);
+    color: black;
     opacity: 1;                 /*-- Pour que l'écriture soit vraiment noir --*/
     font-weight: bold;
     font-size: 16px;
@@ -124,7 +124,7 @@ form{
 
 
 /*---- filtres ----*/
-.filtres{
+.filters{
     margin-top: 20px;
     margin-left: 20px;
     display: flex;
@@ -132,13 +132,13 @@ form{
     flex-wrap: wrap;
     width: 100%;
 }
-.filtres ul{
+.filters ul{
     list-style: none;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }   
-.filtres li{
+.filters li{
     display: flex;
     align-items: center;
     border: 2px solid #F2F2F2;
@@ -147,14 +147,14 @@ form{
     margin-right: 30px;
     margin-top: 10px;
 }
-.filtres li:hover{
+.filters li:hover{
     cursor: pointer;
     background-color: #DEEBFF;
     color: #0065FC;
     transition-duration: 500ms;
     border-color: #DEEBFF;
 }
-.filtres i{
+.filters i{
     background-color: #DEEBFF;
     color: #0065FC;
     height: 50px;
@@ -165,7 +165,7 @@ form{
     align-items: center;
     
 }
-.filtres_text{
+.filters_text{
     padding: 0 20px 0 10px;
     font-size: 16px;
     font-weight: bold;
@@ -185,7 +185,7 @@ form{
 }
 
 /*---- Section "Les plus populaires" ----*/
-.populaires{
+.popular{
     background-color: #F2F2F2;
     border: 1px solid #F2F2F2;
     border-radius: 30px;
@@ -196,11 +196,11 @@ form{
     margin-bottom: 40px;
     margin-left: 20px;
 }
-.populaires a{
+.popular a{
     text-decoration: none;
     color: black;
 }
-.card_populaires{
+.card_popular{
     display: flex;
     background-color: white;
     width: 90%;
@@ -211,33 +211,33 @@ form{
     margin-bottom: 40px;
     
 }
-.card_populaires:hover{
+.card_popular:hover{
     transform: scale(1.05);
     transition: 0.3s;
     box-shadow: 10px 10px 10px gray;
 }
-.img_populaires{
+.img_popular{
     border: white 1px solid;
-    border-radius: 30px 0px 0px 30px;
+    border-radius: 30px 0 0 30px;
     padding: 2px; 
     width: 150px;   
     object-fit: cover;
 }
-.text_populaires h3{
+.text_popular h3{
     margin-left: 20px;
-    padding: 0%;
+    padding: 0;
 }
-.text_populaires p{
+.text_popular p{
     margin-left: 20px;
 }
-.notation_populaires{
+.rating_popular{
     margin-left: 20px;
     color: #0065FC;
 }
-.etoile_grise{
+.grey_star{
     color: #F2F2F2;
 }
-.populaires h2{
+.popular h2{
     display: flex;
     justify-content: space-between;
     margin: 30px;
@@ -245,7 +245,7 @@ form{
 
 
 /*---- Article "Hébergements à Marseille" ----*/
-.hebergements{
+#accommodations{
     background-color: #F2F2F2;
     border: 1px solid #F2F2F2;
     border-radius: 30px;
@@ -258,16 +258,16 @@ form{
     flex-wrap: wrap;
     
 }
-.hebergements h2{
+#accommodations h2{
     width: 100%;
     display: flex;
-    margin: 30px 0px 0px 30px;
+    margin: 30px 0 0 30px;
     
 }
-.hebergements a{
+#accommodations a{
     text-decoration: none;
 }
-.card_hebergements{
+.card_accommodations{
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -275,36 +275,36 @@ form{
     border-radius: 30px;
     width: 260px;
     height: 220px;
-    margin: 0px 10px 10px 10px;
+    margin: 0 10px 10px 10px;
    
 }
-.img_hebergements{
+.img_accommodations{
     border: 2px white solid;
-    border-radius: 30px 30px 0px 0px;
+    border-radius: 30px 30px 0 0;
     height: 130px;
     object-fit: cover;
 }
-.text_hebergements{
+.text_accommodations{
     color: black;
 }
-.text_hebergements h3{
+.text_accommodations h3{
     margin: 10px 0 0 15px;
 }
-.text_hebergements p{
-    margin: 5px 0px 10px 15px;
+.text_accommodations p{
+    margin: 5px 0 10px 15px;
 }
-.notation_hebergements{
+.rating_accommodations{
     color: #0065FC;
-    margin: 0px 0px 0px 15px;
+    margin: 0 0 0 15px;
 }
-.card_hebergements:hover{
+.card_accommodations:hover{
     transform: scale(1.05);
     transition: 0.3s;
     box-shadow: 10px 10px 10px gray;
 }
-.afficher{
+.pin_up{
     width: 100%;
-    margin: 0px 0px 0px 30px;
+    margin: 0 0 0 30px;
     color: black;
     font-weight: bold;
 }
@@ -318,14 +318,14 @@ main{
 
 
 /*---- Article "Activités à Marseille" ----*/
-.activité h2{
+#activity h2{
     margin-left: 20px;
     padding-bottom: 20px;
 }
 
 
 /*---- Section "activités" pour le placement des cards ----*/
-.activités{
+.activites{
     display: flex;
     flex-flow: column wrap;
     width: 100%;
@@ -334,7 +334,7 @@ main{
     font-weight: bold;  
 
 }
-.activités figure{
+.activites figure{
     margin: auto;
 }
 
@@ -344,7 +344,7 @@ main{
     width: 22%;
     border-radius: 30px;
     overflow: hidden;
-    box-shadow:0px 1px 5px 5px #F2F2F2;
+    box-shadow:0 1px 5px 5px #F2F2F2;
 }
 .card_port:hover{
     cursor: pointer;
@@ -359,22 +359,22 @@ main{
 }
 
 
-figure.card_pomègues{             /*-- Card "Fort de Pomègues" --*/
-    margin-top: 0%;
+figure.card_pomegues{             /*-- Card "Fort de Pomègues" --*/
+    margin-top: 0;
 }
-.card_pomègues{
+.card_pomegues{
     height: 50%;
     width: 22%;
     border-radius: 30px;
-    box-shadow:0px 1px 5px 5px #F2F2F2;
+    box-shadow:0 1px 5px 5px #F2F2F2;
     overflow: hidden;
 }
-.card_pomègues:hover{
+.card_pomegues:hover{
     cursor: pointer;
     transform: scale(1.05);
     transition: 0.3s;
 }
-.img_pomègues{
+.img_pomegues{
     width: 100%;
     height: 80%;
     object-fit: cover;
@@ -382,13 +382,13 @@ figure.card_pomègues{             /*-- Card "Fort de Pomègues" --*/
 
 
 figure.card_frioul{             /*-- Card "Îles de Frioul" --*/
-    margin-bottom: 0%;
+    margin-bottom: 0;
 }
 .card_frioul{
     height: 40%;
     width: 22%;
     border-radius: 30px;
-    box-shadow:0px 1px 5px 5px #F2F2F2;
+    box-shadow:0 1px 5px 5px #F2F2F2;
     overflow: hidden;
 }
 .card_frioul:hover{
@@ -407,7 +407,7 @@ figure.card_frioul{             /*-- Card "Îles de Frioul" --*/
     height: 100%;
     width: 22%;
     border-radius: 30px;
-    box-shadow:0px 1px 5px 5px #F2F2F2;
+    box-shadow:0 1px 5px 5px #F2F2F2;
     overflow: hidden;
 }
 .card_calanques:hover{
@@ -423,13 +423,13 @@ figure.card_frioul{             /*-- Card "Îles de Frioul" --*/
 
 
 figure.card_dame{               /*-- Card "Notre dame de la garde" --*/
-    margin-right: 0%;
-    margin-top: 0%;
+    margin-right: 0;
+    margin-top: 0;
 }
 .card_dame{
     height: 40%;
     width: 22%;
-    box-shadow:0px 1px 5px 5px #F2F2F2;
+    box-shadow:0 1px 5px 5px #F2F2F2;
     border-radius: 30px;
     overflow: hidden;
 }
@@ -446,13 +446,13 @@ figure.card_dame{               /*-- Card "Notre dame de la garde" --*/
 
 
 figure.card_longchamp{          /*-- Card "Parc Longchamp" --*/
-    margin-right: 0%;
-    margin-bottom: 0%;
+    margin-right: 0;
+    margin-bottom: 0;
 }
 .card_longchamp{
     height: 50%;
     width: 22%;
-    box-shadow:0px 1px 5px 5px #F2F2F2;
+    box-shadow:0 1px 5px 5px #F2F2F2;
     border-radius: 30px;
     overflow: hidden;
 }
@@ -469,8 +469,8 @@ figure.card_longchamp{          /*-- Card "Parc Longchamp" --*/
 
 
 /*-- Légendes des activités à Marseilles --*/
-.activités figcaption{
-    padding: 15px 0px 10px 20px;
+.activites figcaption{
+    padding: 15px 0 10px 20px;
 }
 
 
@@ -487,11 +487,11 @@ footer ul{
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    padding-left: 0%;
+    padding-left: 0;
     margin-right: 80px;    
 }
 footer li{
-    padding: 10px 0px 10px 0px;
+    padding: 10px 0 10px 0;
 }
 footer section{
     margin-left: 40px;
