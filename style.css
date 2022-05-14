@@ -54,7 +54,7 @@ header h1 {
 header p {
   padding-top: 0;
 }
-/*---------- Formulaire ----------*/
+/*---------- Form ----------*/
 form {
   display: flex;
   margin-left: 20px;
@@ -69,13 +69,13 @@ form {
 /*---------- Input type search ----------*/
 .search_bar {
   width: 220px;
-  border: none;               /*-- Pour enlever la bordure de base --*/
+  border: none;               
   border: 1px solid #F2F2F2;
   padding-left: 20px;   
 }
 .search_bar::placeholder {
   color: black;
-  opacity: 1;                 /*-- Pour que l'écriture soit vraiment noir --*/
+  opacity: 1;                 
   font-weight: bold;
   font-size: 16px;
 }
@@ -93,9 +93,7 @@ form {
 }
 
 @media screen and (max-width: 767px) {
-    .desktop_button {
-      display: none;
-    }
+    
 }
 /*---------- Button mobile ----------*/
 @media screen and (min-width: 768px) {
@@ -105,22 +103,12 @@ form {
 }
 
 @media screen and (max-width: 786px) {
-    .mobile_button {
-      border: none;
-      border-radius: 15px;
-      background-color: #0065FC;
-      padding: 15px;
-      color: white;
-      font-size: 16px;
-      position: relative;
-      right: 20px;
-      cursor: pointer;
-    }
+    
 }
-/*---------- filtres ----------*/
+/*---------- Section filters ----------*/
 .filters {
-  margin-top: 20px;
-  margin-left: 20px;
+  margin-top: 30px;
+  margin-left: 30px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -173,13 +161,18 @@ form {
   color: #0065FC;
   font-weight: 900;
   border: #F2F2F2 2px solid;
-  border-radius: 50%;
+  border-radius: 100%;
   padding: 4px 8px;
   margin-left: 20px;
   margin-right: 10px;
-  margin-bottom: 20px;
 }
-/*---------- Section "Les plus populaires" ----------*/
+
+/*---------- Title info -----------*/
+.title_info {
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+/*---------- Section popular ----------*/
 .popular {
   background-color: #F2F2F2;
   border: 1px solid #F2F2F2;
@@ -245,7 +238,7 @@ form {
   justify-content: space-between;
   margin: 30px;
 }
-/*--------- Article "Hébergements à Marseille" ----------*/
+/*--------- Article accomodations ----------*/
 #accommodations {
   background-color: #F2F2F2;
   border: 1px solid #F2F2F2;
@@ -321,12 +314,12 @@ main {
   display: flex;
   flex-direction: row-reverse;
 }
-/*---------- Article "Activités à Marseille" ----------*/
+/*---------- Article activity ----------*/
 #activity h2 {
   margin-left: 20px;
   padding-bottom: 20px;
 }
-/*---------- Section "activités" pour le placement des cards ----------*/
+/*---------- Figure activites ----------*/
 .activites {
   display: flex;
   flex-flow: column wrap;
@@ -477,7 +470,7 @@ figure.card_longchamp {          /*-- Card "Parc Longchamp" --*/
   height: 80%;
   object-fit: cover;
 }
-/*---------- Légendes des activités à Marseilles ----------*/
+/*---------- Figcaption activities ----------*/
 .activites figcaption {
   padding: 15px 0 10px 20px;
 }
@@ -512,7 +505,176 @@ footer a {
   color: black;
 }
 /*---------- Responsive mobile ----------*/
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+  /*---------- Nav  mobile ----------*/
+  nav {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .list_nav {
+    width: 100%;
+    justify-content: space-around;
+    padding: 0%;
+  }
+
+  .list_nav a {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #F2F2F2;
+    width: 100%;  
+  }
+
+  .list_nav li {
+    display: flex;
+    width: 100%;
+    text-align: center;
+  }
+
+  .list_nav a:hover {
+    border-top: none;
+    border-bottom-color: #0065FC;
+  }
+  /*---------- Header mobile ----------*/
+  header {
+    width: 90%;
+    margin: auto;
+  }
+  /*---------- Searchbar mobile ----------*/
+  .search_bar {
+    width: 80%;
+  }
+  /*---------- Button desktop ----------*/
+  .desktop_button {
+    display: none;
+  }
+  /*---------- Button mobile ----------*/
+  .mobile_button {
+    border: none;
+    border-radius: 15px;
+    background-color: #0065FC;
+    padding: 15px;
+    color: white;
+    font-size: 16px;
+    position: relative;
+    right: 20px;
+    cursor: pointer;
+  }
+  /*---------- Section filters mobile ----------*/
+  .filters {
+  margin-bottom: 20px;
+  }
+  /*---------- Title info mobile ----------*/
+  .title_info {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  /*---------- Main mobile ----------*/
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  /*---------- Section popular mobile ----------*/
+  .popular {
+    border-radius: 0;
+    width: 98%;
+    margin: auto;
+    margin-bottom: 0px;
+  }
+
+  .img_popular {
+    width: 40%;
+  }
+  /*---------- Article accomodations mobile ----------*/
+  #accommodations {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: unset;
+    border: none;  
+  }
+
+  #accommodations a {
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    margin-top: 30px;
+    padding-left: none;
+  }
+
+  .card_accommodations {
+    width: 90%;
+    box-shadow:1px 1px 5px 5px #F2F2F2;
+  }
+  /*---------- Article activites mobile ----------*/
+  .activites {
+    width: 98%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: auto; 
+  }
+
+  .activites figure {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 250px;
+    margin: auto;
+    margin-bottom: 30px;
+    box-shadow:1px 1px 5px 5px #F2F2F2;
+  }
+
+  .activites figure:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    box-shadow: 10px 10px 10px gray;
+    }
+  
+  .img_port {
+    height: 80%;
+    }
+    
+  .img_pomegues {
+    height: 80%;
+    }
+
+  .img_frioul {
+    height: 80%;
+    }
+    
+  .img_calanques {
+    height: 80%;
+    }
+
+  .img_dame {
+    height: 80%;
+  }
+
+  .img_longchamp {
+    height: 80%;
+  }
+  /*---------- Footer mobile ----------*/
+  footer {
+    width: 98%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer ul {
+    margin-bottom: 30px;
+  }
+}
+
+
+
 
 @media screen and (max-width: 1200px) {}
 
