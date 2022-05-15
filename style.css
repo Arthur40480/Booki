@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700;800;900&display=swap');
 /*---------- Body ----------*/
 body {
-  max-width: 1440px;
+  box-sizing: content-box;
   margin: auto;
+  max-width: 1440px; 
   width: 98%;
   font-size: 14px;
-  box-sizing: content-box;
   font-family: "Raleway";
 }
 /*---------- Nav ----------*/
@@ -17,8 +17,8 @@ nav {
 }
 
 .logo_nav {
-  width: 100px;
   margin-left: 20px;
+  width: 100px; 
 }
 
 .list_nav {
@@ -32,8 +32,8 @@ nav {
 }
 
 .list_nav a:hover {
-  color: #0065FC;
   border-top: #0065FC solid 2px;
+  color: #0065FC;
 }
 
 nav ul {
@@ -61,80 +61,80 @@ form {
 }
 /*---------- Îcon localisation ----------*/
 .fa-location-dot {
-  background-color: #F2F2F2;
-  padding: 15px 17px;
   border-radius: 15px 0 0 15px;
-  font-size: 16px;    
+  padding: 15px 17px;
+  font-size: 16px;
+  background-color: #f2f2f2;    
 }
 /*---------- Input type search ----------*/
 .search_bar {
-  width: 220px;
   border: none;               
-  border: 1px solid #F2F2F2;
-  padding-left: 20px;   
+  border: 1px solid #f2f2f2;
+  padding-left: 20px;
+  width: 220px;    
 }
 .search_bar::placeholder {
-  color: black;
-  opacity: 1;                 
-  font-weight: bold;
   font-size: 16px;
+  font-weight: bold;
+  color: black;
+  opacity: 1;                  
 }
 /*---------- Button desktop ----------*/
 .desktop_button {
   border: none;
-  background-color: #0065FC;
-  border-color: #0065FC;
   border-radius: 0 15px 15px 0;
+  border-color: #0065fc;
   width: 120px;
-  color: white;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
+  color: white;
+  background-color: #0065fc;
 }
 /*---------- Section filters ----------*/
 .filters {
-  margin-top: 30px;
-  margin-left: 30px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: 30px;
+  margin-left: 30px;
   width: 100%;
 }
 
 .filters ul {
-  list-style: none;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  list-style: none; 
 }
 
 .filters li {
   display: flex;
   align-items: center;
-  border: 2px solid #F2F2F2;
-  border-radius: 30px;
-  border-left: none;
   margin-right: 30px;
   margin-top: 10px;
+  border: 2px solid #f2f2f2;
+  border-radius: 30px;
+  border-left: none; 
 }
 
 .filters li:hover {
+  border-color: #Deebff;
   cursor: pointer;
-  background-color: #DEEBFF;
-  color: #0065FC;
   transition-duration: 500ms;
-  border-color: #DEEBFF;
+  background-color: #deebff;
+  color: #0065fc;  
 }
 
 .filters i {
-  background-color: #DEEBFF;
-  color: #0065FC;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
   display: flex;
   justify-content: center;
-  align-items: center;    
+  align-items: center;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #deebff;
+  color: #0065fc;      
 }
 
 .filters_text {
@@ -144,31 +144,31 @@ form {
 }
 /*---------- Îcon infos ----------*/
 .fa-info {
-  color: #0065FC;
-  font-weight: 900;
-  border: #F2F2F2 2px solid;
-  border-radius: 100%;
-  padding: 4px 8px;
   margin-left: 20px;
   margin-right: 10px;
+  border: #f2f2f2 2px solid;
+  border-radius: 100%;
+  padding: 4px 8px;
+  font-weight: 900;
+  color: #0065fc; 
 }
 
 /*---------- Title info -----------*/
 .title_info {
-  font-weight: normal;
   margin-bottom: 30px;
+  font-weight: normal;  
 }
 /*---------- Section popular ----------*/
 .popular {
-  background-color: #F2F2F2;
-  border: 1px solid #F2F2F2;
-  border-radius: 30px;
-  width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 40px;
   margin-left: 20px;
+  border: 1px solid #f2f2f2;
+  border-radius: 30px;
+  width: 30%;
+  background-color: #f2f2f2;
 }
 
 .popular a {
@@ -178,13 +178,13 @@ form {
 
 .card_popular {
   display: flex;
-  background-color: white;
-  width: 90%;
-  height: 150px;
+  margin: auto;
+  margin-bottom: 40px;
   border: 1px white solid;
   border-radius: 30px;
-  margin: auto;
-  margin-bottom: 40px;   
+  width: 90%;
+  height: 150px;
+  background-color: white;    
 }
 
 .card_popular:hover {
@@ -195,13 +195,13 @@ form {
 
 .img_popular {
   display: flex;
+  object-fit: cover;
   border: white 1px solid;
   border-radius: 30px 0 0 30px;
   padding: 2px; 
   width: 30%;
   min-width: 30%;
-  height: auto;  
-  object-fit: cover;
+  height: auto;    
 }
 
 .text_popular {
@@ -211,9 +211,9 @@ form {
 }
 
 .text_popular h3 {
-  width: 100%;
-  margin: 10px 0px 5px 0px;
-  padding:0%
+  margin: 10px 0 5px 0;
+  padding: 0;
+  width: 100%;  
 }
 
 .text_popular p {
@@ -226,13 +226,12 @@ form {
   display: flex;
   flex-direction: row;
   justify-items: end;
-  color: #0065FC;
   margin: 55px 0 0 0;
-  
+  color: #0065fc; 
 }
 
 .grey_star {
-  color: #F2F2F2;
+  color: #f2f2f2;
 }
 
 .popular h2 {
@@ -242,43 +241,43 @@ form {
 }
 /*--------- Article accomodations ----------*/
 #accommodations {
-  background-color: #F2F2F2;
-  border: 1px solid #F2F2F2;
-  border-radius: 30px;
+  display: flex;
+  flex-wrap: wrap;
   margin-right: 15px;
   margin-left: 20px;
-  display: flex;
+  border: 1px solid #f2f2f2;
+  border-radius: 30px;
   width: 66%;
   height: 662px;
-  flex-wrap: wrap;   
+  background-color: #f2f2f2;    
 }
 
 #accommodations h2 {
-  width: 100%;
   display: flex;
+  width: 100%;
   margin: 30px 0 0 30px;    
 }
 
 #accommodations a {
-  text-decoration: none;
   width: 33%;
+  text-decoration: none; 
 }
 
 .card_accommodations {
   display: flex;
   flex-direction: column;
-  background-color: white;
+  margin: 0 5px 10px 5px;
   border: 2px white solid;
   border-radius: 30px;
   height: 240px;
-  margin: 0 5px 10px 5px;
+  background-color: white;  
 }
 
 .img_accommodations {
+  object-fit: cover;
   border: 2px white solid;
   border-radius: 30px 30px 0 0;
-  height: 130px;
-  object-fit: cover;
+  height: 130px; 
 }
 
 .text_accommodations {
@@ -294,8 +293,8 @@ form {
 }
 
 .rating_accommodations {
-  color: #0065FC;
   margin: 0 0 0 5px;
+  color: #0065fc;
 }
 
 .card_accommodations:hover {
@@ -306,8 +305,8 @@ form {
 
 .pin_up {
   margin: 0 0 0 30px;
-  color: black;
   font-weight: bold;
+  color: black;
 }
 /*---------- Main ----------*/
 main {
@@ -323,11 +322,11 @@ main {
 .activites {
   display: flex;
   flex-flow: column wrap;
-  margin-left: 0%;
+  margin-left: 0;
   width: 100%;
-  height: 600px;  
-  color: black; 
+  height: 600px;
   font-weight: bold;  
+  color: black;     
 }
 
 .activites figure {
@@ -335,11 +334,11 @@ main {
 }
 
 .card_port {                     /*-- Card "Vieux port" --*/
-  height: 100%;
-  width: 22%;
-  border-radius: 30px;
   overflow: hidden;
-  box-shadow:0 1px 5px 5px #F2F2F2;
+  border-radius: 30px;
+  box-shadow:0 1px 5px 5px #f2f2f2;
+  width: 22%;
+  height: 100%; 
 }
 
 .card_port:hover {
@@ -349,9 +348,9 @@ main {
 }
 
 .img_port {
+  object-fit: cover;
   width: 100%;
   height: 90%;
-  object-fit: cover;
 }
 
 figure.card_pomegues {             /*-- Card "Fort de Pomègues" --*/
@@ -359,11 +358,11 @@ figure.card_pomegues {             /*-- Card "Fort de Pomègues" --*/
 }
 
 .card_pomegues {
-  height: 50%;
-  width: 22%;
-  border-radius: 30px;
-  box-shadow:0 1px 5px 5px #F2F2F2;
   overflow: hidden;
+  border-radius: 30px;
+  width: 22%;
+  height: 50%;
+  box-shadow:0 1px 5px 5px #f2f2f2;
 }
 
 .card_pomegues:hover {
@@ -373,9 +372,9 @@ figure.card_pomegues {             /*-- Card "Fort de Pomègues" --*/
 }
 
 .img_pomegues {
+  object-fit: cover;
   width: 100%;
   height: 80%;
-  object-fit: cover;
 }
 
 figure.card_frioul {             /*-- Card "Îles de Frioul" --*/
@@ -383,11 +382,11 @@ figure.card_frioul {             /*-- Card "Îles de Frioul" --*/
 }
 
 .card_frioul {
-  height: 40%;
-  width: 22%;
-  border-radius: 30px;
-  box-shadow:0 1px 5px 5px #F2F2F2;
   overflow: hidden;
+  border-radius: 30px;
+  width: 22%;
+  height: 40%;
+  box-shadow:0 1px 5px 5px #f2f2f2;
 }
 
 .card_frioul:hover {
@@ -397,17 +396,17 @@ figure.card_frioul {             /*-- Card "Îles de Frioul" --*/
 }
 
 .img_frioul {
+  object-fit: cover;
   width: 100%;
   height: 75%;
-  object-fit: cover;
 }
 
 .card_calanques {                /*-- Card " Parc national des Calanques" --*/
-  height: 100%;
-  width: 22%;
-  border-radius: 30px;
-  box-shadow:0 1px 5px 5px #F2F2F2;
   overflow: hidden;
+  border-radius: 30px;
+  width: 22%;
+  height: 100%;
+  box-shadow:0 1px 5px 5px #f2f2f2;
 }
 
 .card_calanques:hover {
@@ -417,9 +416,9 @@ transition: 0.3s;
 }
 
 .img_calanques {
+  object-fit: cover;
   width: 100%;
   height: 90%;
-  object-fit: cover;
 }
 
 figure.card_dame {               /*-- Card "Notre dame de la garde" --*/
@@ -428,11 +427,11 @@ figure.card_dame {               /*-- Card "Notre dame de la garde" --*/
 }
 
 .card_dame {
-  height: 40%;
-  width: 22%;
-  box-shadow:0 1px 5px 5px #F2F2F2;
-  border-radius: 30px;
   overflow: hidden;
+  border-radius: 30px;
+  width: 22%;
+  height: 40%;
+  box-shadow:0 1px 5px 5px #f2f2f2; 
 }
 
 .card_dame:hover {
@@ -442,9 +441,9 @@ figure.card_dame {               /*-- Card "Notre dame de la garde" --*/
 }
 
 .img_dame {
+  object-fit: cover;
   width: 100%;
   height: 80%;
-  object-fit: cover;
 }
 
 figure.card_longchamp {          /*-- Card "Parc Longchamp" --*/
@@ -453,11 +452,11 @@ figure.card_longchamp {          /*-- Card "Parc Longchamp" --*/
 }
 
 .card_longchamp {
-  height: 50%;
-  width: 22%;
-  box-shadow:0 1px 5px 5px #F2F2F2;
-  border-radius: 30px;
   overflow: hidden;
+  border-radius: 30px;
+  width: 22%;
+  height: 50%;
+  box-shadow:0 1px 5px 5px #f2f2f2; 
 }
 
 .card_longchamp:hover {
@@ -467,9 +466,9 @@ figure.card_longchamp {          /*-- Card "Parc Longchamp" --*/
 }
 
 .img_longchamp {
+  object-fit: cover;
   width: 100%;
   height: 80%;
-  object-fit: cover;
 }
 /*---------- Figcaption activities ----------*/
 .activites figcaption {
@@ -479,18 +478,18 @@ figure.card_longchamp {          /*-- Card "Parc Longchamp" --*/
 footer {
   display: flex;
   justify-content: space-between;
-  background-color: #f2f2f2;
-  width: 100%;
-  padding-top: 60px;
   margin-top: 40px;
+  padding-top: 60px;
+  width: 100%;
+  background-color: #f2f2f2;
 }
 
 footer ul {
-  list-style-type: none;
   display: flex;
   flex-direction: column;
+  margin-right: 80px;
   padding-left: 0;
-  margin-right: 80px;    
+  list-style-type: none;     
 }
 
 footer li {
@@ -521,32 +520,32 @@ footer a {
   }
 
   .list_nav {
-    width: 100%;
     justify-content: space-around;
-    padding: 0%;
+    width: 100%;
+    padding: 0;
   }
 
   .list_nav a {
+    border-bottom: 2px solid #f2f2f2;
     padding-top: 10px;
     padding-bottom: 15px;
-    border-bottom: 2px solid #F2F2F2;
     width: 100%;  
   }
 
   .list_nav li {
     display: flex;
-    width: 100%;
     text-align: center;
+    width: 100%;  
   }
 
   .list_nav a:hover {
     border-top: none;
-    border-bottom-color: #0065FC;
+    border-bottom-color: #0065fc;
   }
   /*---------- Header mobile ----------*/
   header {
-    width: 90%;
     margin: auto;
+    width: 90%;
   }
   /*---------- Searchbar mobile ----------*/
   .search_bar {
@@ -558,15 +557,15 @@ footer a {
   }
   /*---------- Button mobile ----------*/
   .mobile_button {
-    border: none;
-    border-radius: 15px;
-    background-color: #0065FC;
-    padding: 15px;
-    color: white;
-    font-size: 16px;
     position: relative;
     right: 20px;
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 16px;
     cursor: pointer;
+    background-color: #0065fc;
+    color: white;
   }
   /*---------- Section filters mobile ----------*/
   .filters {
@@ -576,8 +575,8 @@ footer a {
   .title_info {
     display: flex;
     align-items: center;
-    width: 100%;
     margin-bottom: 20px;
+    width: 100%;
   }
   /*---------- Main mobile ----------*/
   main {
@@ -586,9 +585,9 @@ footer a {
   }
   /*---------- Section popular mobile ----------*/
   .popular {
+    margin: auto;
     border-radius: 0;
     width: 100%;
-    margin: auto;
   }
 
   .img_popular {
@@ -598,25 +597,25 @@ footer a {
   #accommodations {
     display: flex;
     flex-direction: column;
-    width: 98%;
-    height: auto;
     margin: auto;
     margin-bottom: 30px;
+    width: 98%;
+    height: auto;
     background-color: unset;
     border: none;  
   }
 
   #accommodations a {
-    width: 100%;
-    margin: auto;
     align-items: center;
+    margin: auto;
     margin-top: 30px;
-    padding-left: none;
+    width: 100%;
+    padding-left: 0;
   }
 
   .card_accommodations {
     width: 90%;
-    box-shadow:1px 1px 5px 5px #F2F2F2;
+    box-shadow:1px 1px 5px 5px #f2f2f2;
   }
 
   #accommodations figcaption {
@@ -628,20 +627,20 @@ footer a {
   }
   /*---------- Article activites mobile ----------*/
   .activites {
-    width: 98%;
-    margin: auto;
     display: flex;
     flex-direction: column;
-    height: auto; 
+    margin: auto;
+    height: auto;
+    width: 98%; 
   }
 
   .activites figure {
     display: flex;
     flex-direction: column;
-    width: 90%;
-    height: 250px;
     margin: auto;
     margin-bottom: 30px;
+    width: 90%;
+    height: 250px;
     box-shadow:1px 1px 5px 5px #F2F2F2;
   }
 
@@ -676,17 +675,16 @@ footer a {
   }
   /*---------- Footer mobile ----------*/
   footer {
-    width: 98%;
-    margin: auto;
     display: flex;
     flex-direction: column;
+    margin: auto;
+    width: 98%;
   }
 
   footer ul {
     margin-bottom: 30px;
   }
 }
-
 /*---------- Responsive Tablet ----------*/
 @media screen and (min-width: 768px) and (max-width: 991px) {
   /*---------- Main tablet ----------*/
@@ -696,9 +694,9 @@ footer a {
   }
   /*---------- Section popular tablet ----------*/
   .popular {
-    width: 100%;
     margin: auto;
     margin-bottom: 30px;
+    width: 100%;
   }
 
   .popular img {
@@ -710,9 +708,9 @@ footer a {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    margin: 0;
     width: 100%;
     height: auto;
-    margin: 0;
   }
 
   #accommodations h2 {
@@ -731,8 +729,6 @@ footer a {
   #accommodations .pin_up {
     margin: 20px 0 10px 30px;
   }
- 
-
 }
 
 
