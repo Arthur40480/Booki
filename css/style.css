@@ -5,7 +5,7 @@ body {
   box-sizing: content-box;
   margin: auto;
   max-width: 1440px; 
-  width: 98%;
+  width: 100%;
   font-size: 14px;
   font-family: "Raleway";
 }
@@ -13,6 +13,7 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .logo_nav {
@@ -40,7 +41,7 @@ nav ul {
 /*---------- Header ----------*/
 header {
   margin: auto;
-  margin-top: 50px;
+  width: 98%;
 }
 
 header h1 {
@@ -54,6 +55,8 @@ header p {
 /*---------- Form ----------*/
 form {
   display: flex;
+  margin: auto;
+  width: 98%;
 }
 /*---------- Îcon localisation ----------*/
 .fa-location-dot {
@@ -105,8 +108,8 @@ form {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 30px;
-  width: 100%;
+  margin: auto;
+  width: 98%;
 }
 
 .filters h2 {
@@ -157,7 +160,7 @@ form {
 }
 /*---------- Îcon infos ----------*/
 .fa-info {
-  margin-right: 10px;
+  margin: auto;
   border: #f2f2f2 2px solid;
   border-radius: 100%;
   padding: 4px 8px;
@@ -167,14 +170,15 @@ form {
 
 /*---------- Title info -----------*/
 .title_info {
-  margin-bottom: 30px;
+  margin: auto;
+  width: 98%;
   font-weight: normal;  
 }
 /*---------- Main ----------*/
 main {
   display: flex;
   flex-direction: row-reverse;
-  margin-bottom: 20px;
+  margin: 20px 0 20px 0;
   width: 100%;
 }
 /*---------- Section popular ----------*/
@@ -187,6 +191,12 @@ main {
   border-radius: 30px;
   width: 30%;
   background-color: #f2f2f2;
+}
+
+.popular h2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
 }
 
 .popular a {
@@ -251,17 +261,11 @@ main {
 .grey_star {
   color: #f2f2f2;
 }
-
-.popular h2 {
-  display: flex;
-  justify-content: space-between;
-  margin: 30px;
-}
 /*--------- Article accomodations ----------*/
 .accommodation {
   display: flex;
   flex-wrap: wrap;
-  margin-right: 15px;
+  margin:0 15px 20px 0;
   border: 1px solid #f2f2f2;
   border-radius: 30px;
   width: 70%;
@@ -332,11 +336,16 @@ main {
 .activites {
   display: flex;
   flex-flow: column wrap;
-  margin: 0;
+  margin: 20px 0 0 0;
   width: 100%;
   height: 600px;
   font-weight: bold;  
   color: black;    
+}
+
+.marseille h2 {
+  margin: auto;
+  width: 98%;
 }
 
 .activites figure {
@@ -594,11 +603,11 @@ footer a {
   /*---------- Header mobile ----------*/
   header {
     margin: auto;
-    width: 90%;
+    width: 98%;
   }
   /*---------- Searchbar mobile ----------*/
   .search_bar {
-    width: 80%;
+    width: 60%;
   }
   /*---------- Button desktop ----------*/
   .desktop_button {
@@ -619,19 +628,19 @@ footer a {
   }
   /*---------- Section filters mobile ----------*/
   .filters {
-  margin-bottom: 20px;
+  margin: auto;
+  width: 98%;
   }
   /*---------- Title info mobile ----------*/
   .title_info {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    width: 100%;
+    margin: auto;
+    width: 95%;
   }
   /*---------- Main mobile ----------*/
   /*---------- Section popular mobile ----------*/
   .popular {
     margin: auto;
+    margin-bottom: 20px;
     border-radius: 0;
     width: 100%;
   }
@@ -647,6 +656,11 @@ footer a {
     width: 100%;
     height: auto;
     background-color: unset;   
+  }
+
+  .accommodation h2 {
+    margin: auto;
+    width: 98%;
   }
 
   .accommodation a {
@@ -674,6 +688,11 @@ footer a {
     margin: auto;
     height: auto;
     width: 98%; 
+  }
+  .marseille h2 {
+    margin: auto;
+    padding-bottom: 20px;
+    width: 98%;
   }
 
   .activites figure {
