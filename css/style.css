@@ -4,8 +4,6 @@
 body {
   box-sizing: content-box;
   margin: auto;
-  max-width: 1440px; 
-  width: 100%;
   font-size: 14px;
   font-family: "Raleway";
 }
@@ -13,7 +11,7 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin: 30px 30px 40px 30px;
 }
 
 .logo_nav {
@@ -25,7 +23,7 @@ nav {
 }
 
 .list_nav a {
-  padding: 12px 20px;
+  padding: 42px 20px;
   text-decoration: none;
   color: black;
 }
@@ -41,7 +39,7 @@ nav ul {
 /*---------- Header ----------*/
 header {
   margin: auto;
-  width: 98%;
+  width: 96%;
 }
 
 header h1 {
@@ -56,7 +54,8 @@ header p {
 form {
   display: flex;
   margin: auto;
-  width: 98%;
+  margin-bottom: 10px;
+  width: 96%;
 }
 /*---------- Îcon localisation ----------*/
 .fa-location-dot {
@@ -109,11 +108,13 @@ form {
   align-items: center;
   flex-wrap: wrap;
   margin: auto;
-  width: 98%;
+  margin-bottom: 20px;
+  width: 96%;
 }
 
 .filters h2 {
   margin-right: 20px;
+  margin-bottom: 0;
 }
 
 .filters ul {
@@ -171,25 +172,26 @@ form {
 /*---------- Title info -----------*/
 .title_info {
   margin: auto;
-  width: 98%;
+  margin-bottom: 30px;
+  width: 96%;
   font-weight: normal;  
 }
 /*---------- Main ----------*/
 main {
   display: flex;
   flex-direction: row-reverse;
-  margin: 20px 0 20px 0;
-  width: 100%;
+  justify-content: space-between;
+  margin: auto;
+  width: 96%;
 }
 /*---------- Section popular ----------*/
 .popular {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 10px;
   border: 1px solid #f2f2f2;
   border-radius: 30px;
-  width: 30%;
+  width: 32%;
   background-color: #f2f2f2;
 }
 
@@ -265,17 +267,16 @@ main {
 .accommodation {
   display: flex;
   flex-wrap: wrap;
-  margin:0 15px 20px 0;
   border: 1px solid #f2f2f2;
   border-radius: 30px;
-  width: 70%;
+  width: 65%;
   height: 662px;
   background-color: #f2f2f2;    
 }
 
 .accommodation h2 {
-  width: 100%;
-  margin: 30px 0 0 30px;    
+  width: 90%;
+  margin: 15px 0 10px 30px;    
 }
 
 .accommodation a {
@@ -286,9 +287,11 @@ main {
 .card_accommodations {
   display: flex;
   flex-direction: column;
-  margin: 0 5px 10px 5px;
+  margin: auto;
+  margin-bottom: 40px;
   border: 2px white solid;
   border-radius: 30px;
+  width: 86%;
   height: 240px;
   background-color: white;  
 }
@@ -324,19 +327,21 @@ main {
 }
 
 .pin_up {
-  margin: 0 0 0 30px;
+  padding-left: 30px;
   font-weight: bold;
   color: black;
 }
-
+/*----------- Article marseille ----------*/
 .marseille {
-  width: 100%;
+  margin: auto;
+  width: 96%;
 }
 /*---------- Figure activities ----------*/
 .activites {
   display: flex;
   flex-flow: column wrap;
-  margin: 20px 0 0 0;
+  margin: auto;
+  margin-top: 20px;
   width: 100%;
   height: 600px;
   font-weight: bold;  
@@ -345,18 +350,17 @@ main {
 
 .marseille h2 {
   margin: auto;
+  margin-top: 50px;
   width: 98%;
-}
-
-.activites figure {
-  margin: auto;
 }
 
 .card_port {                     /*-- Card "Vieux port" --*/
   overflow: hidden;
+  margin: auto;
+  margin-left: 0;
   border-radius: 30px;
   box-shadow:0 1px 5px 5px #f2f2f2;
-  width: 25%;
+  width: 23%;
   height: 100%; 
 }
 
@@ -378,8 +382,9 @@ figure.card_pomegues {             /*-- Card "Fort de Pomègues" --*/
 
 .card_pomegues {
   overflow: hidden;
+  margin: auto;
   border-radius: 30px;
-  width: 25%;
+  width: 23%;
   height: 50%;
   box-shadow:0 1px 5px 5px #f2f2f2;
 }
@@ -402,9 +407,10 @@ figure.card_frioul {             /*-- Card "Îles de Frioul" --*/
 
 .card_frioul {
   overflow: hidden;
+  margin: auto;
   border-radius: 30px;
-  width: 25%;
-  height: 40%;
+  width: 23%;
+  height: 42%;
   box-shadow:0 1px 5px 5px #f2f2f2;
 }
 
@@ -422,8 +428,10 @@ figure.card_frioul {             /*-- Card "Îles de Frioul" --*/
 
 .card_calanques {                /*-- Card " Parc national des Calanques" --*/
   overflow: hidden;
+  margin: auto;
+  margin-left: 30px;
   border-radius: 30px;
-  width: 25%;
+  width: 23%;
   height: 100%;
   box-shadow:0 1px 5px 5px #f2f2f2;
 }
@@ -447,9 +455,10 @@ figure.card_dame {               /*-- Card "Notre dame de la garde" --*/
 
 .card_dame {
   overflow: hidden;
+  margin: auto;
   border-radius: 30px;
-  width: 22%;
-  height: 40%;
+  width: 23%;
+  height: 42%;
   box-shadow:0 1px 5px 5px #f2f2f2; 
 }
 
@@ -472,8 +481,9 @@ figure.card_longchamp {          /*-- Card "Parc Longchamp" --*/
 
 .card_longchamp {
   overflow: hidden;
+  margin: auto;
   border-radius: 30px;
-  width: 22%;
+  width: 23%;
   height: 50%;
   box-shadow:0 1px 5px 5px #f2f2f2; 
 }
@@ -497,8 +507,8 @@ figure.card_longchamp {          /*-- Card "Parc Longchamp" --*/
 footer {
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
-  padding-top: 60px;
+  margin-top: 60px;
+  padding: 60px 0 40px 0;
   width: 100%;
   background-color: #f2f2f2;
 }
@@ -512,7 +522,7 @@ footer ul {
 }
 
 footer li {
-  padding: 10px 0 10px 0;
+  padding: 5px 0 5px 0;
 }
 
 footer section {
@@ -574,6 +584,7 @@ footer a {
   nav {
     flex-direction: column;
     align-items: center;
+    margin: 0;
     width: 100%;
   }
 
@@ -603,11 +614,17 @@ footer a {
   /*---------- Header mobile ----------*/
   header {
     margin: auto;
-    width: 98%;
+    width: 90%;
+  }
+  /*---------- Form mobile ----------*/
+  form {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 90%;
   }
   /*---------- Searchbar mobile ----------*/
   .search_bar {
-    width: 60%;
+    width: 70%;
   }
   /*---------- Button desktop ----------*/
   .desktop_button {
@@ -629,18 +646,23 @@ footer a {
   /*---------- Section filters mobile ----------*/
   .filters {
   margin: auto;
-  width: 98%;
+  margin-bottom: 20px;
+  width: 90%;
   }
   /*---------- Title info mobile ----------*/
   .title_info {
     margin: auto;
-    width: 95%;
+    margin-bottom: 20px;
+    width: 90%;
   }
   /*---------- Main mobile ----------*/
+  main {
+    width: 100%;
+  }
   /*---------- Section popular mobile ----------*/
   .popular {
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     border-radius: 0;
     width: 100%;
   }
@@ -660,16 +682,19 @@ footer a {
 
   .accommodation h2 {
     margin: auto;
-    width: 98%;
+    margin-bottom: 10px;
+    width: 90%;
   }
 
   .accommodation a {
     display: flex;
-    margin-top: 30px;
+    margin-top: 10px;
+    margin-bottom: 5px;
     width: 90%;
   }
 
   .card_accommodations {
+    margin-bottom: 0;
     width: 100%;
     box-shadow:1px 1px 5px 5px #f2f2f2;
   }
