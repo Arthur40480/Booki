@@ -1,3 +1,3 @@
 # Booki
-Project 2 Openclassrooms.
-Creation of a vacation planning tool in html and css.
+Projet n°2 de la formation "Développeur Web" d'Openclassrooms.
+Transformez une maquette en site web avec HTML & CSS.
